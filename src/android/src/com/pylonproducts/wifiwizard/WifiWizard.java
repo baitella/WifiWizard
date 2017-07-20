@@ -135,6 +135,7 @@ public class WifiWizard extends CordovaPlugin {
                 wifi.SSID = newSSID;
                 String newPass = data.getString(2);
                 wifi.preSharedKey = newPass;
+                wifi.hiddenSSID = true;
 
                 wifi.status = WifiConfiguration.Status.ENABLED;
                 wifi.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.TKIP);
